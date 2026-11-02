@@ -1,1 +1,203 @@
-# tonya
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог документов</title>
+  <style>
+    /* Нежно-красная палитра */
+    :root {
+      --bg: #fff5f5;
+      --surface: #ffffff;
+      --primary: #e57373;
+      --primary-dark: #c62828;
+      --primary-soft: #ffcdd2;
+      --text: #3e2723;
+      --text-muted: #7a5c5c;
+      --shadow: 0 8px 24px rgba(198, 40, 40, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(229, 115, 115, 0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(255, 205, 210, 0.35), transparent 38%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .page {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: -0.03em;
+      color: var(--primary-dark);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid rgba(229, 115, 115, 0.25);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-soft));
+      opacity: 0.8;
+    }
+
+    .card:hover,
+    .card:focus-visible {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 14px 32px rgba(198, 40, 40, 0.14);
+      outline: none;
+    }
+
+    .card-title {
+      margin: 6px 0 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .card-desc {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .card-link::after {
+      content: "→";
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover .card-link::after {
+      transform: translateX(4px);
+    }
+
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding-top: 32px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Каталог документов</h1>
+      <p class="subtitle">Ссылки на материалы, размещённые на внешнем ресурсе</p>
+    </header>
+
+    <main class="catalog">
+      <!-- Замените href, заголовки и описания на свои -->
+      <a class="card" href="https://example.com/document-1.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 1</span>
+        <p class="card-desc">Краткое описание первого документа: назначение, версия или дата.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+
+      <a class="card" href="https://example.com/document-2.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 2</span>
+        <p class="card-desc">Описание второго материала. Можно указать формат, размер или категорию.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+
+      <a class="card" href="https://example.com/document-3.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 3</span>
+        <p class="card-desc">Пояснение для третьего документа. Ссылка ведёт на внешний ресурс.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+
+      <a class="card" href="https://example.com/document-4.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 4</span>
+        <p class="card-desc">Здесь может быть описание инструкции, регламента или справочного файла.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+
+      <a class="card" href="https://example.com/document-5.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 5</span>
+        <p class="card-desc">Краткая аннотация. Замените текст и адрес на актуальные.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+
+      <a class="card" href="https://example.com/document-6.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Документ 6</span>
+        <p class="card-desc">Последняя карточка в примере. Добавляйте новые блоки по аналогии.</p>
+        <span class="card-link">Открыть документ</span>
+      </a>
+    </main>
+
+    <footer>
+      Каталог размещён на GitHub Pages · Все ссылки ведут на внешний ресурс
+    </footer>
+  </div>
+</body>
+</html>
