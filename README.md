@@ -152,19 +152,19 @@
 <body>
   <div class="page">
     <header>
-      <h1>Каталог документов</h1>
-      <p class="subtitle">Ссылки на материалы, размещённые на внешнем ресурсе</p>
+      <h1>Каталог документов для работы</h1>
+      <p class="subtitle"></p>
     </header>
 
     <main class="catalog">
-      <!-- Замените href, заголовки и описания на свои -->
-      <a class="card" href="https://example.com/document-1.pdf" target="_blank" rel="noopener noreferrer">
+      <!-- href, регламент 2016 -->
+      <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
         <span class="card-title">Документ 1</span>
-        <p class="card-desc">Краткое описание первого документа: назначение, версия или дата.</p>
+        <p class="card-desc">Документ 1 2016г.р.: назначение, версия или дата.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
-      <a class="card" href="https://example.com/document-2.pdf" target="_blank" rel="noopener noreferrer">
+      <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
         <span class="card-title">Документ 2</span>
         <p class="card-desc">Описание второго материала. Можно указать формат, размер или категорию.</p>
         <span class="card-link">Открыть документ</span>
