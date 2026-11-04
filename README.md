@@ -160,13 +160,13 @@
       <!-- href, регламент 2016 -->
       <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
         <span class="card-title">Документ 1</span>
-        <p class="card-desc">Документ 1 2016г.р.: назначение, версия или дата.</p>
+        <p class="card-desc">ФХМ 2016г.р.:</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
-      <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 2</span>
-        <p class="card-desc">Описание второго материала. Можно указать формат, размер или категорию.</p>
+      <a class="card" href="https://vestnikmoscow.mos.ru/" target="_blank" rel="noopener noreferrer">
+        <span class="card-title">Вестник Москвы</span>
+        <p class="card-desc">Переход на сайт Вестник Москвы.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
