@@ -98,8 +98,26 @@
       outline: none;
     }
 
+    /* Шапка карточки: иконка + заголовок */
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .card-favicon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--primary-soft);
+      padding: 3px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
     .card-title {
-      margin: 6px 0 0;
+      margin: 0;
       font-size: 1.15rem;
       font-weight: 700;
       color: var(--primary-dark);
@@ -159,37 +177,73 @@
     <main class="catalog">
       <!-- href, регламент 2016 -->
       <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 1</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/fhmoscow.com.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Документ 1</span>
+        </div>
         <p class="card-desc">ФХМ 2016г.р.:</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
       <a class="card" href="https://vestnikmoscow.mos.ru/" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Вестник Москвы</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/vestnikmoscow.mos.ru.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Вестник Москвы</span>
+        </div>
         <p class="card-desc">Переход на сайт Вестник Москвы.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
       <a class="card" href="https://example.com/document-3.pdf" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 3</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/example.com.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Документ 3</span>
+        </div>
         <p class="card-desc">Пояснение для третьего документа. Ссылка ведёт на внешний ресурс.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
       <a class="card" href="https://example.com/document-4.pdf" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 4</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/example.com.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Документ 4</span>
+        </div>
         <p class="card-desc">Здесь может быть описание инструкции, регламента или справочного файла.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
       <a class="card" href="https://example.com/document-5.pdf" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 5</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/example.com.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Документ 5</span>
+        </div>
         <p class="card-desc">Краткая аннотация. Замените текст и адрес на актуальные.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
       <a class="card" href="https://example.com/document-6.pdf" target="_blank" rel="noopener noreferrer">
-        <span class="card-title">Документ 6</span>
+        <div class="card-header">
+          <img class="card-favicon"
+               src="https://icons.duckduckgo.com/ip3/example.com.ico"
+               alt="" loading="lazy" width="28" height="28"
+               onerror="this.style.display='none'">
+          <span class="card-title">Документ 6</span>
+        </div>
         <p class="card-desc">Последняя карточка в примере. Добавляйте новые блоки по аналогии.</p>
         <span class="card-link">Открыть документ</span>
       </a>
