@@ -557,3 +557,7 @@
   </script>
 </body>
 </html>
+/* Скрывает заголовок "tonya" в левом верхнем углу */
+h1 {
+    display: none !important;
+}
