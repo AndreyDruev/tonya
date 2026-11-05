@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -96,8 +96,8 @@
       outline: none;
     }
 
-    /* Отдельно для карточки Вестник — z-index поднимается при открытом виджете,
-       чтобы панель рисовалась поверх соседних карточек */
+    /* Карточка Вестника: при открытом виджете поднимаем z-index,
+       чтобы панель легла поверх соседних карточек */
     .card-vestnik {
       position: relative;
     }
@@ -164,7 +164,7 @@
       font-size: 0.9rem;
     }
 
-    /* ===== Виджет «Документы по годам» внутри карточки ===== */
+    /* ===== Виджет «Документы по годам» внутри карточки Вестника ===== */
     .docs-widget {
       position: relative;
       margin-top: 6px;
@@ -311,16 +311,16 @@
     </header>
 
     <main class="catalog">
-      <!-- Документ 1 -->
-      <a class="card" href="https://cdn.fhmoscow.com/content/document/file/118910.pdf?v=1792501872" target="_blank" rel="noopener noreferrer">
+      <!-- Центр 2016 -->
+      <a class="card" href="https://fhmoscow.com/team/604?season=5&amp;team-inner-tab=3" target="_blank" rel="noopener noreferrer">
         <div class="card-header">
           <img class="card-favicon"
                src="https://icons.duckduckgo.com/ip3/fhmoscow.com.ico"
                alt="" loading="lazy" width="28" height="28"
                onerror="this.style.display='none'">
-          <span class="card-title">Документ 1</span>
+          <span class="card-title">Центр 2016</span>
         </div>
-        <p class="card-desc">ФХМ 2016г.р.:</p>
+        <p class="card-desc">Страница команды на сайте ФХМ.</p>
         <span class="card-link">Открыть документ</span>
       </a>
 
@@ -557,7 +557,3 @@
   </script>
 </body>
 </html>
-/* Скрывает заголовок "tonya" в левом верхнем углу */
-h1 {
-    display: none !important;
-}
